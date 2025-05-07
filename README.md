@@ -5,4 +5,4 @@ The experiments were run on:
 - PyTorch 2.4.1
 - Cuda 11.8
 ## Dataset
-The data from [CheXpert](https://stanfordmlgroup.github.io/competitions/chexpert/) datasets is not included here, but can be downloaded elsewhere.
+
