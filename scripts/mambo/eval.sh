@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # custom config
-TRAINER=LoCoOp
+TRAINER=Mambo
 
 CSC=False
 CTP=end
@@ -20,10 +20,10 @@ python eval_ood_detection.py \
 --root ${DATA} \
 --trainer ${TRAINER} \
 --dataset-config-file configs/datasets/${DATASET}.yaml \
---config-file configs/trainers/LoCoOp/${CFG}.yaml \
+--config-file configs/trainers/Mambo/${CFG}.yaml \
 --output-dir ${Output_dir} \
 --model-dir ${MODEL_dir} \
 --load-epoch 30 \
 --T ${T} \
-TRAINER.LOCOOP.N_CTX ${NCTX} \
-TRAINER.LOCOOP.CSC ${CSC} \
+TRAINER.MAMBO.N_CTX ${NCTX} \
+TRAINER.MAMBO.CSC ${CSC} \
