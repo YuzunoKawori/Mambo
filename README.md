@@ -1,4 +1,4 @@
-# Mambo: Multi-Level Self-Calibrated of VLMs for Background Prompt Guided Few-Shot OOD Detection
+# Background Prompt for Few-Shot Out-of-Distribution Detection
 ## Requirements
 The experiments were run on:
 - Python 3.8.20 
