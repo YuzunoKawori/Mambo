@@ -33,7 +33,7 @@ def weighted_background_mask_avg(tensor, weight, eps=1e-8):
     x=tensor
     x_mean = x.mean(dim=1, keepdim=True) 
     x_std = x.std(dim=1, keepdim=True)   
-    threshold = x_mean -2* weight * x_std 
+    threshold = x_mean -1* weight * x_std 
     mask = x > threshold  
     return mask
 
@@ -65,7 +65,7 @@ def enttopy_except_ood(background_local_sim,label,class_local_sim,nat_probs,num_
     background_local_sim=background_local_sim.view(batch_size*num_of_local_feature)
     background_local_sim=background_local_sim*(1-true_probs_repeat)+true_probs_repeat*background_local_sim*(1-class_local_p)
     background_local_sim=background_local_sim.view(batch_size,num_of_local_feature)
-    binary_tensor=weighted_background_mask_avg(background_local_sim,true_probs-0.5)
+    binary_tensor=weighted_background_mask_avg(background_local_sim,2*true_probs-1)
     binary_tensor = binary_tensor.view(background_local_sim.shape[0]*background_local_sim.shape[1], 1)
     background_local_sim=background_local_sim.view(background_local_sim.shape[0]*background_local_sim.shape[1], 1)
     binary_tensor=binary_tensor.squeeze()
