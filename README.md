@@ -22,6 +22,7 @@ Mambo
 ```
 ## Quick Start
 The training script is in `Mambo/scripts/mambo/train.sh`
+
 e.g., 16-shot training with ViT-B/16
 ```train
 CUDA_VISIBLE_DEVICES=0 bash scripts/mambo/train.sh data imagenet vit_b16_ep50 end 16 16 False 0.2 200
