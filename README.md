@@ -20,9 +20,6 @@ Mambo
     |-- Texture
     ...
 ```
-## Pre-trained Models
-We share the 16-shot pre-trained models for Mambo.
-
 ## Quick Start
 The training script is in `Mambo/scripts/mambo/train.sh`
 e.g., 16-shot training with ViT-B/16
