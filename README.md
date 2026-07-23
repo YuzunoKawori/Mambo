@@ -1,4 +1,5 @@
 # Background Prompt for Few-Shot Out-of-Distribution Detection
+This repository contains the official PyTorch implementation of our paper: [Background Prompt for Few-Shot Out-of-Distribution Detection](https://arxiv.org/abs/2509.21055).
 ## Requirements
 The experiments were run on:
 - Python 3.8.20 
